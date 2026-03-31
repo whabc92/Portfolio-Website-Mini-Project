@@ -1,0 +1,121 @@
+.servis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.servis-title{
+    position: relative;
+}
+
+.servis-title h1{
+    font-size: 80px;
+    font-weight: 600;
+    padding: 0px 30px;
+}
+
+.servis-title img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.servis-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.servis-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.servis-format h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.servis-format h2{
+    font-size: 34px;
+    font-weight: 800;
+    background: linear-gradient(267deg, #DF8908 50%, #B923E1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.servis-format p{
+    color: #d4d4d4;
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 300px;
+}
+
+.servis-readmore{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.servis-format:hover{
+    transform: scale(1.05);
+    border: 2px solid purple;
+    background-image: linear-gradient(45deg, #3f0028, #582300);
+    transition: 0.4s;
+}
+
+@media(max-width:768px){
+
+    .servis{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+
+    .servis-title h1{
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .servis-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+
+    .servis-format{
+        gap: 20px;
+        padding: 32px;
+    }
+
+    .servis-format h2{
+        font-size: 28px;
+    }
+
+    .servis-format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+
+    .servis-readmore img{
+        width: 20px;  
+    }
+
+    .servis-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
