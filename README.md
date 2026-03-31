@@ -1,4 +1,4 @@
-A modern personal portfolio website built with **React** and **Vite**, showcasing my projects, skills, and contact information.
+A modern portfolio website built with **React** and **Vite**, showcasing projects, skills, and contact information.
 
 ---
 
